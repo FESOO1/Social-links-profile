@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --f-all: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.box {
+    width: 370px;
+    padding: 30px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    font-family: var(--f-all);
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.avatar-image {
+    --size: 120px;
+    width: var(--size);
+    height: var(--size);
+    line-height: 0;
+}
+
+.image-itself {
+    border-radius: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.full-name {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.address {
+    color: hsl(75, 94%, 57%);
+}
+
+.role-text {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.link {
+    background-color: hsl(0, 0%, 20%);
+    padding-block: 15px;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: background-color 400ms, color 400ms;
+}
+
+.link:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+/* MEDIA QEURIES */
+
+@media (max-width: 450px) {
+    .box {
+        width: 85%;
+        padding: 20px;
+    }
+}
